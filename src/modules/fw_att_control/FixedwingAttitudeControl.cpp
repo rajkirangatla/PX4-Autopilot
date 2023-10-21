@@ -150,7 +150,7 @@ FixedwingAttitudeControl::vehicle_manual_poll(const float yaw_body)
 
 				if (_vcontrol_mode.flag_control_attitude_enabled) {
 					// STABILIZED mode generate the attitude setpoint from manual user inputs
-
+                                        //  modified comment
 					_att_sp.roll_body = _manual_control_setpoint.y * radians(_param_fw_man_r_max.get());
 
 					_att_sp.pitch_body = -_manual_control_setpoint.x * radians(_param_fw_man_p_max.get())
